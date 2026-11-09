@@ -1,0 +1,95 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.784615",
+   "Default View_TopLeft":"-229,-399",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port uart_rtl_0 -pg 1 -lvl 8 -x 3410 -y -320 -defaultsOSRD
+preplace port sw -pg 1 -lvl 8 -x 3410 -y -340 -defaultsOSRD
+preplace port led -pg 1 -lvl 8 -x 3410 -y -380 -defaultsOSRD
+preplace port seg -pg 1 -lvl 8 -x 3410 -y -360 -defaultsOSRD
+preplace port an -pg 1 -lvl 8 -x 3410 -y -300 -defaultsOSRD
+preplace port port-id_clk_100MHz -pg 1 -lvl 0 -x -100 -y 40 -defaultsOSRD
+preplace port port-id_reset_rtl_0 -pg 1 -lvl 0 -x -100 -y -190 -defaultsOSRD
+preplace port port-id_pwm_r -pg 1 -lvl 8 -x 3410 -y -280 -defaultsOSRD
+preplace port port-id_pwm_g -pg 1 -lvl 8 -x 3410 -y -260 -defaultsOSRD
+preplace port port-id_pwm_b -pg 1 -lvl 8 -x 3410 -y -240 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 4 -x 1030 -y -30 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -x 1500 -y -120 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 6 -x 2010 -y 110 -defaultsOSRD
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 7 -x 3220 -y 160 -defaultsOSRD
+preplace inst microblaze_0_xlconcat -pg 1 -lvl 6 -x 2010 -y 910 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 4 -x 1030 -y 280 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 4 -x 1030 -y 110 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 5 -x 1500 -y 50 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 4 -x 1030 -y -180 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 590 -y -130 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 2 -x 320 -y -250 -defaultsOSRD
+preplace inst pwm_axi_0 -pg 1 -lvl 1 -x 50 -y -260 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|xbar -pg 1 -lvl 2 -x 2340 -y 340 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|s00_couplers -pg 1 -lvl 1 -x 2050 -y 320 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m00_couplers -pg 1 -lvl 3 -x 2760 -y 40 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m01_couplers -pg 1 -lvl 3 -x 2760 -y 210 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m02_couplers -pg 1 -lvl 3 -x 2760 -y 380 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m03_couplers -pg 1 -lvl 3 -x 2760 -y 560 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m04_couplers -pg 1 -lvl 3 -x 2760 -y 740 -defaultsOSRD
+preplace netloc microblaze_0_intr 1 6 1 3100 170n
+preplace netloc microblaze_0_Clk 1 0 7 -60 -340 160 -160 470 -220 760 -260 1290 -230 1760 -100 3090
+preplace netloc clk_wiz_1_locked 1 4 1 1320 90n
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 3 4 790 190 NJ 190 1690 -90 3070
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 4 2 1330 -210 1670
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 0 7 -70 -350 170 -370 450 -230 750 -280 N -280 1770J -110 3100
+preplace netloc mdm_1_debug_sys_rst 1 4 1 1330 70n
+preplace netloc clk_100MHz_1 1 0 4 NJ 40 N 40 N 40 700
+preplace netloc reset_rtl_0_1 1 0 5 -80 -170 N -170 460 -210 710 180 1310
+preplace netloc axi_uartlite_0_interrupt 1 4 2 1320J -220 1680
+preplace netloc pwm_axi_0_pwm_r 1 1 7 180J -350 470J -320 NJ -320 NJ -320 NJ -320 NJ -320 3360J
+preplace netloc pwm_axi_0_pwm_g 1 1 7 200J -330 440J -290 NJ -290 NJ -290 NJ -290 NJ -290 3350J
+preplace netloc pwm_axi_0_pwm_b 1 1 7 190J -360 NJ -360 730J -370 1270J -240 NJ -240 NJ -240 NJ
+preplace netloc microblaze_0_dlmb_1 1 4 1 1300 -150n
+preplace netloc microblaze_0_ilmb_1 1 4 1 1320 -130n
+preplace netloc microblaze_0_axi_dp 1 4 2 1300J 280 NJ
+preplace netloc microblaze_0_interrupt 1 3 5 790 -270 NJ -270 NJ -270 NJ -270 3340
+preplace netloc microblaze_0_intc_axi 1 6 1 3080 40n
+preplace netloc microblaze_0_debug 1 3 2 780 210 1270J
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 3 4 770 -360 NJ -360 NJ -360 3030
+preplace netloc axi_uartlite_0_UART 1 4 4 1280J -370 NJ -370 NJ -370 3380J
+preplace netloc axi_gpio_0_GPIO 1 3 5 720J -390 NJ -390 NJ -390 NJ -390 3390J
+preplace netloc axi_gpio_0_GPIO2 1 3 5 740J -380 NJ -380 NJ -380 NJ -380 NJ
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 2 5 480 -350 NJ -350 NJ -350 NJ -350 3040
+preplace netloc axi_gpio_1_GPIO 1 2 6 430J -310 NJ -310 NJ -310 NJ -310 NJ -310 3370J
+preplace netloc axi_gpio_1_GPIO2 1 2 6 470J -300 NJ -300 NJ -300 NJ -300 NJ -300 NJ
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 1 6 210 -340 NJ -340 NJ -340 NJ -340 NJ -340 3050
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 0 7 -80 -380 NJ -380 NJ -380 710J -330 NJ -330 NJ -330 3060
+preplace netloc microblaze_0_axi_periph|microblaze_0_axi_periph_ACLK_net 1 0 3 1940 220 2190 220 2550
+preplace netloc microblaze_0_axi_periph|microblaze_0_axi_periph_ARESETN_net 1 0 3 1930 210 2200 210 2560
+preplace netloc microblaze_0_axi_periph|microblaze_0_axi_periph_to_s00_couplers 1 0 1 N 280
+preplace netloc microblaze_0_axi_periph|s00_couplers_to_xbar 1 1 1 N 320
+preplace netloc microblaze_0_axi_periph|m00_couplers_to_microblaze_0_axi_periph 1 3 1 N 40
+preplace netloc microblaze_0_axi_periph|xbar_to_m00_couplers 1 2 1 2480 0n
+preplace netloc microblaze_0_axi_periph|m01_couplers_to_microblaze_0_axi_periph 1 3 1 N 210
+preplace netloc microblaze_0_axi_periph|xbar_to_m01_couplers 1 2 1 2570 170n
+preplace netloc microblaze_0_axi_periph|m02_couplers_to_microblaze_0_axi_periph 1 3 1 N 380
+preplace netloc microblaze_0_axi_periph|xbar_to_m02_couplers 1 2 1 N 340
+preplace netloc microblaze_0_axi_periph|m03_couplers_to_microblaze_0_axi_periph 1 3 1 N 520
+preplace netloc microblaze_0_axi_periph|xbar_to_m03_couplers 1 2 1 2490 360n
+preplace netloc microblaze_0_axi_periph|m04_couplers_to_microblaze_0_axi_periph 1 3 1 N 700
+preplace netloc microblaze_0_axi_periph|xbar_to_m04_couplers 1 2 1 2480 380n
+preplace netloc microblaze_0_axi_periph|m03_couplers|m03_couplers_to_m03_couplers 1 0 1 N 520
+preplace netloc microblaze_0_axi_periph|m04_couplers|m04_couplers_to_m04_couplers 1 0 1 N 700
+levelinfo -pg 1 -100 50 320 590 1030 1500 2010 3220 3410
+levelinfo -hier microblaze_0_axi_periph * 2050 2340 2760 *
+levelinfo -hier microblaze_0_axi_periph|m03_couplers * *
+levelinfo -hier microblaze_0_axi_periph|m04_couplers * *
+pagesize -pg 1 -db -bbox -sgen -230 -400 3530 970
+pagesize -hier microblaze_0_axi_periph -db -bbox -sgen 1890 -60 2940 830
+pagesize -hier microblaze_0_axi_periph|m03_couplers -db -bbox -sgen 2680 490 2840 630
+pagesize -hier microblaze_0_axi_periph|m04_couplers -db -bbox -sgen 2680 670 2840 810
+"
+}
+{
+   "da_axi4_cnt":"6",
+   "da_board_cnt":"21",
+   "da_mb_cnt":"4"
+}
