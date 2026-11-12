@@ -1,0 +1,4 @@
+domain_path: C:\git\ele_embedded_b_group_project\lab\lab_02\vtis\micro_blaze\export\micro_blaze\sw\standalone_microblaze_0
+app_src_dir: C:\AMD_Embedded\2025.1\Vitis\data\embeddedsw\lib\sw_apps\empty_application
+template: empty_application
+lang: c

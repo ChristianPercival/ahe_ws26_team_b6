@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-//Date        : Fri Nov  6 12:49:50 2026
+//Date        : Thu Nov 12 15:39:21 2026
 //Host        : LAPTOP-C5OCR9QS running 64-bit major release  (build 9200)
 //Command     : generate_target microblaze.bd
 //Design      : microblaze
@@ -240,7 +240,7 @@ module m01_couplers_imp_UXJV17
   assign S_AXI_wready = M_AXI_wready;
 endmodule
 
-(* CORE_GENERATION_INFO = "microblaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=microblaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=18,numReposBlks=13,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_board_cnt=17,da_mb_cnt=4,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "microblaze.hwdef" *) 
+(* CORE_GENERATION_INFO = "microblaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=microblaze,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=18,numReposBlks=13,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_board_cnt=20,da_mb_cnt=4,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "microblaze.hwdef" *) 
 module microblaze
    (clk_100MHz,
     reset_rtl_0,
@@ -248,7 +248,7 @@ module microblaze
     uart_rtl_0_txd);
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK_100MHZ CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK_100MHZ, CLK_DOMAIN microblaze_clk_100MHz, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input clk_100MHz;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET_RTL_0 RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET_RTL_0, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input reset_rtl_0;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_rtl_0 RxD" *) (* X_INTERFACE_MODE = "Master" *) input uart_rtl_0_rxd;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_rtl_0 RxD" *) (* x_interface_mode = "Master" *) input uart_rtl_0_rxd;
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_rtl_0 TxD" *) output uart_rtl_0_txd;
 
   wire axi_uartlite_0_interrupt;

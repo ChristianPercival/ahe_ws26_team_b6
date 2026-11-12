@@ -1,0 +1,6 @@
+create libxil.a
+addlib C:/git/ele_embedded_b_group_project/lab/lab_02/vtis/micro_blaze/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartlite/src/libuartlite.a
+addlib C:/git/ele_embedded_b_group_project/lab/lab_02/vtis/micro_blaze/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/intc/src/libintc.a
+addlib C:/git/ele_embedded_b_group_project/lab/lab_02/vtis/micro_blaze/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/bram/src/libbram.a
+save
+end

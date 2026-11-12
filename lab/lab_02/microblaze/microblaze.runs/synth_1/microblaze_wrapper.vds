@@ -3,8 +3,8 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Fri Nov  6 12:49:57 2026
-# Process ID         : 9024
+# Start of session at: Thu Nov 12 15:39:27 2026
+# Process ID         : 4968
 # Current directory  : C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1
 # Command line       : vivado.exe -log microblaze_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source microblaze_wrapper.tcl
 # Log file           : C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/microblaze_wrapper.vds
@@ -17,12 +17,12 @@
 # CPU Physical cores : 6
 # CPU Logical cores  : 12
 # Host memory        : 17012 MB
-# Swap memory        : 4294 MB
-# Total Virtual      : 21307 MB
-# Available Virtual  : 3005 MB
+# Swap memory        : 4831 MB
+# Total Virtual      : 21844 MB
+# Available Virtual  : 3142 MB
 #-----------------------------------------------------------
 source microblaze_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 494.363 ; gain = 213.512
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 492.121 ; gain = 209.723
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
@@ -43,22 +43,22 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 15288
+INFO: [Synth 8-7075] Helper process launched with PID 6960
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1233.559 ; gain = 493.238
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1232.109 ; gain = 495.219
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'microblaze_wrapper' [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/hdl/microblaze_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'microblaze' [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:243]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_axi_uartlite_0_2' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_axi_uartlite_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_axi_uartlite_0_2' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_axi_uartlite_0_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_clk_wiz_1_3' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_clk_wiz_1_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_clk_wiz_1_3' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_clk_wiz_1_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_mdm_1_3' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_mdm_1_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_mdm_1_3' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_mdm_1_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_microblaze_0_3' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_microblaze_0_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_microblaze_0_3' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_microblaze_0_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_microblaze_0_axi_intc_2' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_microblaze_0_axi_intc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_microblaze_0_axi_intc_2' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_microblaze_0_axi_intc_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_axi_uartlite_0_2' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_axi_uartlite_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_axi_uartlite_0_2' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_axi_uartlite_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_clk_wiz_1_3' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_clk_wiz_1_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_clk_wiz_1_3' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_clk_wiz_1_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_mdm_1_3' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_mdm_1_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_mdm_1_3' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_mdm_1_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_microblaze_0_3' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_microblaze_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_microblaze_0_3' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_microblaze_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_microblaze_0_axi_intc_2' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_microblaze_0_axi_intc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_microblaze_0_axi_intc_2' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_microblaze_0_axi_intc_2_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'microblaze_microblaze_0_axi_periph_2' [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:782]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_2SZHJX' [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_2SZHJX' (0#1) [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:13]
@@ -66,27 +66,27 @@ INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_UXJV17' [c:/git/ele_e
 INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_UXJV17' (0#1) [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:128]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_SYAVRW' [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:1177]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_SYAVRW' (0#1) [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:1177]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_microblaze_0_axi_periph_imp_xbar_2' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_microblaze_0_axi_periph_imp_xbar_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_microblaze_0_axi_periph_imp_xbar_2' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_microblaze_0_axi_periph_imp_xbar_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_microblaze_0_axi_periph_imp_xbar_2' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_microblaze_0_axi_periph_imp_xbar_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_microblaze_0_axi_periph_imp_xbar_2' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_microblaze_0_axi_periph_imp_xbar_2_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'microblaze_microblaze_0_axi_periph_imp_xbar_2' is unconnected for instance 'xbar' [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:1136]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'microblaze_microblaze_0_axi_periph_imp_xbar_2' is unconnected for instance 'xbar' [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:1136]
 WARNING: [Synth 8-7023] instance 'xbar' of module 'microblaze_microblaze_0_axi_periph_imp_xbar_2' has 40 connections declared, but only 38 given [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:1136]
 INFO: [Synth 8-6155] done synthesizing module 'microblaze_microblaze_0_axi_periph_2' (0#1) [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:782]
 INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_HPR3PZ' [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:569]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_dlmb_bram_if_cntlr_3' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_dlmb_bram_if_cntlr_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_dlmb_bram_if_cntlr_3' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_dlmb_bram_if_cntlr_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_dlmb_v10_3' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_dlmb_v10_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_dlmb_v10_3' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_dlmb_v10_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_dlmb_bram_if_cntlr_3' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_dlmb_bram_if_cntlr_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_dlmb_bram_if_cntlr_3' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_dlmb_bram_if_cntlr_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_dlmb_v10_3' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_dlmb_v10_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_dlmb_v10_3' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_dlmb_v10_3_stub.v:6]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'microblaze_dlmb_v10_3' is unconnected for instance 'dlmb_v10' [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:694]
 WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'microblaze_dlmb_v10_3' has 25 connections declared, but only 24 given [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:694]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_ilmb_bram_if_cntlr_3' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_ilmb_bram_if_cntlr_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_ilmb_bram_if_cntlr_3' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_ilmb_bram_if_cntlr_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_ilmb_v10_3' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_ilmb_v10_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_ilmb_v10_3' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_ilmb_v10_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_ilmb_bram_if_cntlr_3' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_ilmb_bram_if_cntlr_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_ilmb_bram_if_cntlr_3' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_ilmb_bram_if_cntlr_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_ilmb_v10_3' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_ilmb_v10_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_ilmb_v10_3' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_ilmb_v10_3_stub.v:6]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'microblaze_ilmb_v10_3' is unconnected for instance 'ilmb_v10' [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:740]
 WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'microblaze_ilmb_v10_3' has 25 connections declared, but only 24 given [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:740]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_lmb_bram_3' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_lmb_bram_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_lmb_bram_3' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_lmb_bram_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_lmb_bram_3' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_lmb_bram_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_lmb_bram_3' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_lmb_bram_3_stub.v:6]
 WARNING: [Synth 8-7071] port 'rsta_busy' of module 'microblaze_lmb_bram_3' is unconnected for instance 'lmb_bram' [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:765]
 WARNING: [Synth 8-7071] port 'rstb_busy' of module 'microblaze_lmb_bram_3' is unconnected for instance 'lmb_bram' [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:765]
 WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'microblaze_lmb_bram_3' has 16 connections declared, but only 14 given [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:765]
@@ -95,8 +95,8 @@ INFO: [Synth 8-6157] synthesizing module 'microblaze_microblaze_0_xlconcat_2' [c
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_7_xlconcat' [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v:59]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_7_xlconcat' (0#1) [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v:59]
 INFO: [Synth 8-6155] done synthesizing module 'microblaze_microblaze_0_xlconcat_2' (0#1) [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/ip/microblaze_microblaze_0_xlconcat_2/synth/microblaze_microblaze_0_xlconcat_2.v:53]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_rst_clk_wiz_1_100M_3' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_rst_clk_wiz_1_100M_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_rst_clk_wiz_1_100M_3' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-9024-LAPTOP-C5OCR9QS/realtime/microblaze_rst_clk_wiz_1_100M_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_rst_clk_wiz_1_100M_3' [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_rst_clk_wiz_1_100M_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_rst_clk_wiz_1_100M_3' (0#1) [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/.Xil/Vivado-4968-LAPTOP-C5OCR9QS/realtime/microblaze_rst_clk_wiz_1_100M_3_stub.v:6]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'microblaze_rst_clk_wiz_1_100M_3' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:558]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'microblaze_rst_clk_wiz_1_100M_3' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:558]
 WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'microblaze_rst_clk_wiz_1_100M_3' has 10 connections declared, but only 8 given [c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/synth/microblaze.v:558]
@@ -204,18 +204,18 @@ WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_7_xlconcat is eithe
 WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1348.688 ; gain = 608.367
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1347.617 ; gain = 610.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1348.688 ; gain = 608.367
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1347.617 ; gain = 610.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1348.688 ; gain = 608.367
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1347.617 ; gain = 610.727
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1348.688 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1347.617 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -277,32 +277,32 @@ Parsing XDC File [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/micr
 Finished Parsing XDC File [C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1348.688 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1347.617 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1348.688 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1347.617 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'microblaze_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1348.688 ; gain = 608.367
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1347.617 ; gain = 610.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1348.688 ; gain = 608.367
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1347.617 ; gain = 610.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1348.688 ; gain = 608.367
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1347.617 ; gain = 610.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1348.688 ; gain = 608.367
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1347.617 ; gain = 610.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -325,25 +325,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1363.996 ; gain = 623.676
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1358.262 ; gain = 621.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1535.473 ; gain = 795.152
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1526.625 ; gain = 789.734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1536.109 ; gain = 795.789
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1527.258 ; gain = 790.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1546.133 ; gain = 805.812
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1537.621 ; gain = 800.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -361,37 +361,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1780.707 ; gain = 1040.387
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1771.602 ; gain = 1034.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1780.707 ; gain = 1040.387
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1771.602 ; gain = 1034.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1780.707 ; gain = 1040.387
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1771.602 ; gain = 1034.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1780.707 ; gain = 1040.387
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1771.602 ; gain = 1034.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1780.707 ; gain = 1040.387
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1771.602 ; gain = 1034.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1780.707 ; gain = 1040.387
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1771.602 ; gain = 1034.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -435,16 +435,16 @@ Report Cell Usage:
 |14    |OBUF                                        |     1|
 +------+--------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1780.707 ; gain = 1040.387
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1771.602 ; gain = 1034.711
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 1780.707 ; gain = 1040.387
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1780.707 ; gain = 1040.387
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1771.602 ; gain = 1034.711
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1771.602 ; gain = 1034.711
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1789.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1777.621 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.488 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1781.004 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -452,8 +452,8 @@ Synth Design complete | Checksum: 9c672034
 INFO: [Common 17-83] Releasing license: Synthesis
 66 Infos, 140 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:47 . Memory (MB): peak = 1793.488 ; gain = 1257.395
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1793.488 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1781.004 ; gain = 1245.719
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1781.004 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1/microblaze_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file microblaze_wrapper_utilization_synth.rpt -pb microblaze_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Nov  6 12:51:05 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 12 15:40:20 2026...
