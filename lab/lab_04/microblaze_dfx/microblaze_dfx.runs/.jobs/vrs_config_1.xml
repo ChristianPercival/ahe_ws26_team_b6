@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="microblaze_dlmb_bram_if_cntlr_3_synth_1" LaunchDir="C:/git/ele_embedded_b_group_project/lab/lab_04/microblaze_dfx/microblaze_dfx.runs/microblaze_dlmb_bram_if_cntlr_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="microblaze_microblaze_0_axi_periph_imp_xbar_2_synth_1" LaunchDir="C:/git/ele_embedded_b_group_project/lab/lab_04/microblaze_dfx/microblaze_dfx.runs/microblaze_microblaze_0_axi_periph_imp_xbar_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="microblaze_axi_gpio_0_0_synth_1" LaunchDir="C:/git/ele_embedded_b_group_project/lab/lab_04/microblaze_dfx/microblaze_dfx.runs/microblaze_axi_gpio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/git/ele_embedded_b_group_project/lab/lab_04/microblaze_dfx/microblaze_dfx.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="microblaze_dlmb_bram_if_cntlr_3_synth_1"/>
+		<Parent Id="microblaze_microblaze_0_axi_periph_imp_xbar_2_synth_1"/>
+		<Parent Id="microblaze_axi_gpio_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+		<Parameter Name="general.usePosixSpawnForFork" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

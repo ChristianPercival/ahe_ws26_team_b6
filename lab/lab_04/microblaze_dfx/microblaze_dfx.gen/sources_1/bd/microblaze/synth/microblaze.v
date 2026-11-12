@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-//Date        : Thu Nov 12 16:10:48 2026
+//Date        : Thu Nov 12 17:14:26 2026
 //Host        : LAPTOP-C5OCR9QS running 64-bit major release  (build 9200)
 //Command     : generate_target microblaze.bd
 //Design      : microblaze
@@ -367,9 +367,9 @@ module microblaze
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK_100MHZ CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK_100MHZ, CLK_DOMAIN microblaze_clk_100MHz, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input clk_100MHz;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET_RTL_0 RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET_RTL_0, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input reset_rtl_0;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.RM_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.RM_CLK, CLK_DOMAIN /clk_wiz_1_clk_out1, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) output rm_clk;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 rm_din TRI_O" *) (* x_interface_mode = "Master" *) output [15:0]rm_din_tri_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 rm_dout TRI_I" *) (* x_interface_mode = "Master" *) input [15:0]rm_dout_tri_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_rtl_0 RxD" *) (* x_interface_mode = "Master" *) input uart_rtl_0_rxd;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 rm_din TRI_O" *) (* X_INTERFACE_MODE = "Master" *) output [15:0]rm_din_tri_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 rm_dout TRI_I" *) (* X_INTERFACE_MODE = "Master" *) input [15:0]rm_dout_tri_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_rtl_0 RxD" *) (* X_INTERFACE_MODE = "Master" *) input uart_rtl_0_rxd;
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_rtl_0 TxD" *) output uart_rtl_0_txd;
 
   wire axi_uartlite_0_interrupt;

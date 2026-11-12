@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.runs/synth_1'
+HD_PWD='C:/git/ele_embedded_b_group_project/lab/lab_04/microblaze_dfx/microblaze_dfx.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log microblaze_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source microblaze_wrapper.tcl
+EAStep vivado -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl

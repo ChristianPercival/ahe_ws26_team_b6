@@ -2,11 +2,11 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
--- Date        : Thu Nov  5 14:35:00 2026
+-- Date        : Thu Nov 12 17:15:32 2026
 -- Host        : LAPTOP-C5OCR9QS running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top microblaze_dlmb_bram_if_cntlr_3 -prefix
---               microblaze_dlmb_bram_if_cntlr_3_ microblaze_dlmb_bram_if_cntlr_1_sim_netlist.vhdl
--- Design      : microblaze_dlmb_bram_if_cntlr_1
+-- Command     : write_vhdl -force -mode funcsim
+--               c:/git/ele_embedded_b_group_project/lab/lab_04/microblaze_dfx/microblaze_dfx.gen/sources_1/bd/microblaze/ip/microblaze_dlmb_bram_if_cntlr_3/microblaze_dlmb_bram_if_cntlr_3_sim_netlist.vhdl
+-- Design      : microblaze_dlmb_bram_if_cntlr_3
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xc7a100tcsg324-1
@@ -170,7 +170,7 @@ entity microblaze_dlmb_bram_if_cntlr_3_lmb_bram_if_cntlr is
   attribute C_LMB_PROTOCOL : integer;
   attribute C_LMB_PROTOCOL of microblaze_dlmb_bram_if_cntlr_3_lmb_bram_if_cntlr : entity is 0;
   attribute C_MASK : string;
-  attribute C_MASK of microblaze_dlmb_bram_if_cntlr_3_lmb_bram_if_cntlr : entity is "64'b0000000000000000000000000000000000000000001000000000000000000000";
+  attribute C_MASK of microblaze_dlmb_bram_if_cntlr_3_lmb_bram_if_cntlr : entity is "64'b0000000000000000000000000000000001000000000000000000000000000000";
   attribute C_MASK1 : string;
   attribute C_MASK1 of microblaze_dlmb_bram_if_cntlr_3_lmb_bram_if_cntlr : entity is "64'b0000000000000000000000000000000000000000100000000000000000000000";
   attribute C_MASK2 : string;
@@ -199,6 +199,8 @@ entity microblaze_dlmb_bram_if_cntlr_3_lmb_bram_if_cntlr is
   attribute C_UE_FAILING_REGISTERS of microblaze_dlmb_bram_if_cntlr_3_lmb_bram_if_cntlr : entity is 0;
   attribute C_WRITE_ACCESS : integer;
   attribute C_WRITE_ACCESS of microblaze_dlmb_bram_if_cntlr_3_lmb_bram_if_cntlr : entity is 2;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of microblaze_dlmb_bram_if_cntlr_3_lmb_bram_if_cntlr : entity is "lmb_bram_if_cntlr";
 end microblaze_dlmb_bram_if_cntlr_3_lmb_bram_if_cntlr;
 
 architecture STRUCTURE of microblaze_dlmb_bram_if_cntlr_3_lmb_bram_if_cntlr is
@@ -535,7 +537,7 @@ begin
       INIT => X"40"
     )
         port map (
-      I0 => \^lmb_abus\(10),
+      I0 => \^lmb_abus\(1),
       I1 => LMB_WriteStrobe,
       I2 => LMB_BE(0),
       O => BRAM_WEN_A(0)
@@ -545,7 +547,7 @@ begin
       INIT => X"40"
     )
         port map (
-      I0 => \^lmb_abus\(10),
+      I0 => \^lmb_abus\(1),
       I1 => LMB_WriteStrobe,
       I2 => LMB_BE(1),
       O => BRAM_WEN_A(1)
@@ -555,7 +557,7 @@ begin
       INIT => X"40"
     )
         port map (
-      I0 => \^lmb_abus\(10),
+      I0 => \^lmb_abus\(1),
       I1 => LMB_WriteStrobe,
       I2 => LMB_BE(2),
       O => BRAM_WEN_A(2)
@@ -565,7 +567,7 @@ begin
       INIT => X"40"
     )
         port map (
-      I0 => \^lmb_abus\(10),
+      I0 => \^lmb_abus\(1),
       I1 => LMB_WriteStrobe,
       I2 => LMB_BE(3),
       O => BRAM_WEN_A(3)
@@ -579,7 +581,7 @@ GND: unisim.vcomponents.GND
       INIT => X"1"
     )
         port map (
-      I0 => \^lmb_abus\(10),
+      I0 => \^lmb_abus\(1),
       I1 => LMB_Rst,
       O => \No_ECC.Sl_Rdy_i_1_n_0\
     );
@@ -648,7 +650,7 @@ entity microblaze_dlmb_bram_if_cntlr_3 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of microblaze_dlmb_bram_if_cntlr_3 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of microblaze_dlmb_bram_if_cntlr_3 : entity is "microblaze_dlmb_bram_if_cntlr_1,lmb_bram_if_cntlr,{}";
+  attribute CHECK_LICENSE_TYPE of microblaze_dlmb_bram_if_cntlr_3 : entity is "microblaze_dlmb_bram_if_cntlr_3,lmb_bram_if_cntlr,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of microblaze_dlmb_bram_if_cntlr_3 : entity is "yes";
   attribute x_core_info : string;
@@ -740,7 +742,7 @@ architecture STRUCTURE of microblaze_dlmb_bram_if_cntlr_3 is
   attribute C_LMB_PROTOCOL : integer;
   attribute C_LMB_PROTOCOL of U0 : label is 0;
   attribute C_MASK : string;
-  attribute C_MASK of U0 : label is "64'b0000000000000000000000000000000000000000001000000000000000000000";
+  attribute C_MASK of U0 : label is "64'b0000000000000000000000000000000001000000000000000000000000000000";
   attribute C_MASK1 : string;
   attribute C_MASK1 of U0 : label is "64'b0000000000000000000000000000000000000000100000000000000000000000";
   attribute C_MASK2 : string;

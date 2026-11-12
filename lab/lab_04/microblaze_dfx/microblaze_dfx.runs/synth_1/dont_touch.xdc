@@ -3,6 +3,8 @@
 
 # XDC: imports/lab_1/Nexys-A7-100T-Master.xdc
 
+# XDC: new/dfx_floorplan.xdc
+
 # Block Designs: bd/microblaze/microblaze.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==microblaze || ORIG_REF_NAME==microblaze} -quiet] -quiet
 
@@ -48,4 +50,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==microblaze_
 # IP: bd/microblaze/ip/microblaze_axi_uartlite_0_2/microblaze_axi_uartlite_0_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==microblaze_axi_uartlite_0_2 || ORIG_REF_NAME==microblaze_axi_uartlite_0_2} -quiet] -quiet
 
-# XDC: c:/git/ele_embedded_b_group_project/lab/lab_02/microblaze/microblaze.gen/sources_1/bd/microblaze/microblaze_ooc.xdc
+# IP: bd/microblaze/ip/microblaze_axi_gpio_0_0/microblaze_axi_gpio_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==microblaze_axi_gpio_0_0 || ORIG_REF_NAME==microblaze_axi_gpio_0_0} -quiet] -quiet
+
+# XDC: c:/git/ele_embedded_b_group_project/lab/lab_04/microblaze_dfx/microblaze_dfx.gen/sources_1/bd/microblaze/microblaze_ooc.xdc

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Nov 12 17:14:34 2026
+# Process ID         : 20556
+# Current directory  : C:/git/ele_embedded_b_group_project/lab/lab_04/microblaze_dfx/microblaze_dfx.runs/microblaze_microblaze_0_axi_periph_imp_xbar_2_synth_1
+# Command line       : vivado.exe -log microblaze_microblaze_0_axi_periph_imp_xbar_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source microblaze_microblaze_0_axi_periph_imp_xbar_2.tcl
+# Log file           : C:/git/ele_embedded_b_group_project/lab/lab_04/microblaze_dfx/microblaze_dfx.runs/microblaze_microblaze_0_axi_periph_imp_xbar_2_synth_1/microblaze_microblaze_0_axi_periph_imp_xbar_2.vds
+# Journal file       : C:/git/ele_embedded_b_group_project/lab/lab_04/microblaze_dfx/microblaze_dfx.runs/microblaze_microblaze_0_axi_periph_imp_xbar_2_synth_1\vivado.jou
+# Running On         : LAPTOP-C5OCR9QS
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26300
+# Processor Detail   : Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+# CPU Frequency      : 2592 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 17012 MB
+# Swap memory        : 4831 MB
+# Total Virtual      : 21844 MB
+# Available Virtual  : 8143 MB
+#-----------------------------------------------------------
+source microblaze_microblaze_0_axi_periph_imp_xbar_2.tcl -notrace

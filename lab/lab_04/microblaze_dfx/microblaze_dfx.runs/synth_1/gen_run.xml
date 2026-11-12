@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1794494363" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/microblaze_wrapper.dcp">
-  <File Type="PA-TCL" Name="microblaze_wrapper.tcl"/>
-  <File Type="REPORTS-TCL" Name="microblaze_wrapper_reports.tcl"/>
-  <File Type="RDS-RDS" Name="microblaze_wrapper.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="microblaze_wrapper_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="microblaze_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="microblaze_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="microblaze_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="microblaze_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="microblaze_wrapper_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1794503216" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/microblaze_wrapper.dcp">
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/microblaze/microblaze.bd">
@@ -25,9 +25,29 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/top.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../rtl/rm_b.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../rtl/rm_c.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="microblaze_wrapper"/>
+      <Option Name="TopModule" Val="top"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
@@ -41,7 +61,14 @@
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/constrs_1/new/dfx_floorplan.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/dfx_floorplan.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -63,6 +90,9 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="microblaze_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="microblaze_lmb_bram_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="microblaze_microblaze_0_axi_periph_imp_xbar_2"/>
   <BlockFileSet Type="BlockSrcs" Name="microblaze_clk_wiz_1_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="microblaze_dlmb_bram_if_cntlr_3"/>
 </GenRun>
